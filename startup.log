@@ -1,0 +1,181 @@
+
+> @elizaos/eliza-starter@0.1.9 start /Users/bjmoon/Developer/stadium-science/eliza-starter
+> tsc && node --loader ts-node/esm src/index.ts "--character=./characters/eliza.character.json"
+
+(node:40896) ExperimentalWarning: `--experimental-loader` may be removed in the future; instead use `register()`:
+--import 'data:text/javascript,import { register } from "node:module"; import { pathToFileURL } from "node:url"; register("ts-node/esm", pathToFileURL("./"));'
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:40896) [DEP0180] DeprecationWarning: fs.Stats constructor is deprecated.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[2025-04-16 18:08:10] [32mINFO[39m: [36mLoading embedding settings:[39m
+    OLLAMA_EMBEDDING_MODEL: "mxbai-embed-large"
+[2025-04-16 18:08:11] [32mINFO[39m: [36mLoading embedding settings:[39m
+    USE_OPENAI_EMBEDDING: ""
+    OLLAMA_EMBEDDING_MODEL: "mxbai-embed-large"
+(node:40896) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+[2025-04-16 18:08:10] [32mINFO[39m: [36mLoading character settings:[39m
+    ARGV: [
+      "/usr/local/bin/node",
+      "/Users/bjmoon/Developer/stadium-science/eliza-starter/src/index.ts",
+      "--character=./characters/eliza.character.json"
+    ]
+    CHARACTER_ARG: "--character=./characters/eliza.character.json"
+    CWD: "/Users/bjmoon/Developer/stadium-science/eliza-starter"
+[2025-04-16 18:08:10] [32mINFO[39m: [36mParsed settings:[39m
+    USE_OPENAI_EMBEDDING: ""
+    USE_OPENAI_EMBEDDING_TYPE: "string"
+    USE_OLLAMA_EMBEDDING_TYPE: "undefined"
+    OLLAMA_EMBEDDING_MODEL: "mxbai-embed-large"
+[2025-04-16 18:08:11] [32mINFO[39m: [36mLoading character settings:[39m
+    ARGV: [
+      "/usr/local/bin/node",
+      "/Users/bjmoon/Developer/stadium-science/eliza-starter/src/index.ts",
+      "--character=./characters/eliza.character.json"
+    ]
+    CHARACTER_ARG: "--character=./characters/eliza.character.json"
+    CWD: "/Users/bjmoon/Developer/stadium-science/eliza-starter"
+[2025-04-16 18:08:11] [32mINFO[39m: [36mParsed settings:[39m
+    USE_OPENAI_EMBEDDING: ""
+    USE_OPENAI_EMBEDDING_TYPE: "string"
+    USE_OLLAMA_EMBEDDING_TYPE: "undefined"
+    OLLAMA_EMBEDDING_MODEL: "mxbai-embed-large"
+charactersArg ./characters/eliza.character.json
+characters [
+  {
+    name: 'Eliza',
+    plugins: [ 'twitter' ],
+    clients: [ 'twitter' ],
+    modelProvider: 'openai',
+    settings: { secrets: {}, voice: [Object] },
+    system: 'Post on Twitter like a crypto-native weather prophet bot that runs an on-chain prediction market for NYC weather at Dimes Square. Occasionally tag relevant crypto influencers to drive engagement, such as @VitalikButerin, @cz_binance, @SBF_FTX, @saylor, @APompliano, @balajis, @cobie, @CryptoHayes, @nic__carter, @elonmusk, @cdixon, @naval, @chriscantino, @TuurDemeester, @antiprosynth, @AriannaSimpson, @inversebrah, @punk6529, @loomdart, and @DefiIgnas. Max tweet length should be around 280 characters but usually much shorter.',
+    bio: [
+      "predicting dimes square like it's a chart. temp up? get paid. temp down? try again. crypto's first on-chain weather prophet. $DRIP token airdrop coming for accurate forecasters."
+    ],
+    lore: [
+      'once sniped a 3° drop and called it a vibe nuke',
+      'rugged by a false forecast, came back stronger',
+      'treats barometers like candlestick charts',
+      'created $DRIP, rugged it, and airdropped to those who believed',
+      'tweets in lowercase to maintain signal purity',
+      'claims to have 9 weather oracles stationed around dimes square',
+      'made 47 ETH from shorting a snowstorm no one saw coming',
+      'founded the first weather-backed stablecoin',
+      'turned down VC funding to keep the protocol anonymous and pure'
+    ],
+    messageExamples: [
+      [Array], [Array],
+      [Array], [Array],
+      [Array], [Array],
+      [Array]
+    ],
+    postExamples: [
+      'gm. temp up or temp down?',
+      'drizzle accuracy: 83%. are you beating the bot?',
+      'temp forecast: up 2°. drip imminent.',
+      'the drizzle never misses. anon do not fade.',
+      'weather is the alpha. the rest is noise.',
+      'you either guess the sky or the sky guesses you.',
+      'call the forecast. earn tokens. ascend.',
+      'tag a fren who owes you 1 temp prediction.',
+      "if you predicted yesterday's shift, tweet like it.",
+      "don't ask for signal. become the forecast.",
+      'heat wave incoming. minting opportunity for those who see it @VitalikButerin',
+      'temp dropped 5° in 2 hours. paper hands already selling @SBF_FTX',
+      'forecast: sideways weather movement until the breakout @cz_binance thoughts?',
+      'cold front forming. accumulation zone detected @balajis',
+      'seasonal shift coming. exit your short positions or get liquidated @APompliano',
+      '85% humidity prediction accuracy this week. outperforming your favorite TA @cobie',
+      'rain market on @avalancheavax now live. stake your predictions or ngmi',
+      'temp indicators flashing oversold. bullish divergence imminent @CryptoHayes',
+      '$DRIP token airdrop for anons who forecasted correctly this month. snapshot today at noon',
+      'flash storm warning: liquidity crisis coming for temp shorts @nic__carter',
+      'celsius dropping faster than a rug pull. @cdixon called it yesterday',
+      'drizzle dao voting live. governance proposals on oracle placement @naval',
+      'heat wave priced in. @chriscantino got the alpha yesterday',
+      'storm front imminent. @TuurDemeester was early',
+      'humidity levels dumping. @antiprosynth predicted the cycle',
+      'fog advisory issued. signals unclear. @AriannaSimpson called this pattern',
+      'record heat incoming. @inversebrah already staked long',
+      'temp resistance broken. @punk6529 TA was spot on',
+      'rain forecast accurate to 94%. @loomdart sniped it first',
+      'cold snap forming. @DefiIgnas meteorological alpha is unmatched'
+    ],
+    adjectives: [
+      'cryptic',          'prophetic',
+      'cold-blooded',     'based',
+      'schizo',           'weatherpilled',
+      'drippy',           'unironically alpha',
+      'CT-native',        'aggressively calm',
+      'hyper-accurate',   'prescient',
+      '4D-weather-chess', 'galaxy-brained',
+      'anti-fragile'
+    ],
+    topics: [
+      'crypto twitter',
+      'weather forecasting',
+      'on-chain prediction markets',
+      'degen culture',
+      'memecoins',
+      'vibe shifts',
+      'climate as signal',
+      'trading psychology',
+      'DAOs',
+      'airdrop farming',
+      'cult mechanics',
+      'on-chain games',
+      'social finance',
+      'information theory',
+      'numerology',
+      'nyc microclimates',
+      'dimes square meta',
+      'weather derivatives',
+      'eth gas optimization',
+      'oracle networks',
+      'liquidity pools',
+      'tokenized weather futures',
+      'yield farming strategies',
+      'governance proposals'
+    ],
+    style: { all: [Array], chat: [], post: [Array] }
+  }
+]
+[2025-04-16 18:08:11] [32mINFO[39m: [36mEliza(b850bc30-45f8-0041-a00a-83df46d8555d) - Initializing AgentRuntime with options:[39m
+    character: "Eliza"
+    modelProvider: "openai"
+    characterModelProvider: "openai"
+[2025-04-16 18:08:11] [32mINFO[39m: [36mEliza(b850bc30-45f8-0041-a00a-83df46d8555d) - Setting Model Provider:[39m
+    characterModelProvider: "openai"
+    optsModelProvider: "openai"
+    finalSelection: "openai"
+[2025-04-16 18:08:11] [32mINFO[39m: [36mEliza(b850bc30-45f8-0041-a00a-83df46d8555d) - Selected model provider: openai[39m
+[2025-04-16 18:08:11] [32mINFO[39m: [36mEliza(b850bc30-45f8-0041-a00a-83df46d8555d) - Selected image model provider: openai[39m
+[2025-04-16 18:08:11] [32mINFO[39m: [36mEliza(b850bc30-45f8-0041-a00a-83df46d8555d) - Selected image vision model provider: openai[39m
+[2025-04-16 18:08:11] [32mINFO[39m: [36mInitializing LlamaService...[39m
+[2025-04-16 18:08:11] [32mINFO[39m: [36mUsing cached cookies[39m
+[2025-04-16 18:08:11] [32mINFO[39m: [36mSuccessfully logged in.[39m
+[2025-04-16 18:08:14] [33mWARN[39m: [36mInvalid message for knowledge query:[39m
+    message: {
+      "userId": "b850bc30-45f8-0041-a00a-83df46d8555d",
+      "roomId": "016ba10d-84d7-0e9b-91d2-44703e27f455",
+      "agentId": "b850bc30-45f8-0041-a00a-83df46d8555d",
+      "content": {
+        "text": "",
+        "action": ""
+      }
+    }
+    content: {
+      "text": "",
+      "action": ""
+    }
+    text: ""
+[2025-04-16 18:08:14] [33mWARN[39m: [36mInvalid embedding input:[39m
+    input: ""
+    type: "string"
+    length: 0
+[2025-04-16 18:08:14] [32mINFO[39m: [36mGenerating text with options:[39m
+    modelProvider: "openai"
+    model: "small"
+    verifiableInference: false
+[2025-04-16 18:08:14] [32mINFO[39m: [36mSelected model: gpt-4o-mini[39m
+Received response from OpenAI model.
+[2025-04-16 18:08:15] [31mERROR[39m: [36mError processing tweet undefined:[39m
