@@ -9,7 +9,7 @@ services:
         volumes:
             - ./data:/app/data
         environment:
-            - OPENROUTER_API_KEY=
+            - OPENROUTER_API_KEY=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
             - ELEVENLABS_XI_API_KEY=
             - ELEVENLABS_MODEL_ID=eleven_multilingual_v2
             - ELEVENLABS_VOICE_ID=21m00Tcm4TlvDq8ikWAM
@@ -21,6 +21,10 @@ services:
             - ELEVENLABS_OUTPUT_FORMAT=pcm_16000
             - SOL_ADDRESS=So11111111111111111111111111111111111111112
             - SLIPPAGE=1
+            - TWITTER_DRY_RUN=false
+            - TWITTER_USERNAME=DrizzleMafia
+            - TWITTER_PASSWORD=nyc4free!
+            - TWITTER_EMAIL=mfischer1000+drizzlemafia@gmail.com
             - SOLANA_RPC_URL=https://api.mainnet-beta.solana.com
             - HELIUS_API_KEY=
             - SERVER_PORT=3000
