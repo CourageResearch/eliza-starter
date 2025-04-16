@@ -5,7 +5,8 @@ export const character: Character = {
     name: "Eliza",
     plugins: [],
     clients: [Clients.TWITTER],
-    modelProvider: ModelProviderName.OPENROUTER,
+    // Use OpenAI directly instead of OpenRouter
+    modelProvider: ModelProviderName.OPENAI,
     settings: {
         secrets: {},
         voice: {
